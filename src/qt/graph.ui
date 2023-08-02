@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graph</class>
+ <widget class="QDialog" name="Graph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Graph</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QCustomPlot" name="widget" native="true"/>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_max_x">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>532</y>
+        <width>982</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>8</number>
+      </property>
+      <property name="minimum">
+       <double>-1000000.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>1000000.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>100.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>982</width>
+        <height>526</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_min_x">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>564</y>
+        <width>982</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>8</number>
+      </property>
+      <property name="minimum">
+       <double>-1000000.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>1000000.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>-100.000000000000000</double>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
